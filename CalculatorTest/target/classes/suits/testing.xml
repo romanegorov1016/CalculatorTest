@@ -1,0 +1,50 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite parallel="methods" thread-count="2" name="Default Suite">
+
+    <test name="mathematical_operations">
+
+        <groups>
+
+            <run>
+
+                <include name="mathematical_operations">
+
+                </include>
+
+            </run>
+
+        </groups>
+
+        <packages>
+
+            <package name="TestNG"/>
+
+        </packages>
+
+    </test> <!-- calc -->
+
+
+    <test name="trigonometry_operations">
+
+        <groups>
+
+            <run>
+
+                <include name="trigonometry_operations">
+
+                </include>
+
+            </run>
+
+        </groups>
+
+        <packages>
+
+            <package name="TestNG"/>
+
+        </packages>
+
+    </test>
+
+</suite>
